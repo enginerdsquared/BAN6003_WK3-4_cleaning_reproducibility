@@ -1,0 +1,6 @@
+#!/workspaces/BAN6003_WK3-4_cleaning_reproducibility/.venv/bin/python
+import sys
+from jupyter_core.migrate import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
